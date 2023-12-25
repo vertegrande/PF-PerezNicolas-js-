@@ -1,0 +1,429 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@import "fontawesome/css/all.css";
+/* Base mixins, variables proyecto */
+body {
+  font-family: "Poppins", verdana, sans-serif;
+  color: #666;
+  font-size: 13px;
+}
+
+.rojo-texto {
+  color: #e8113a;
+}
+
+/* HEADER */
+header {
+  background-color: #ececec;
+  color: #333333;
+}
+
+.nav-link {
+  font-weight: 700;
+  color: #222 !important;
+}
+
+.bg-body {
+  background: #ececec !important;
+}
+
+header .form-inputs {
+  position: relative;
+}
+
+header .form-inputs .form-control {
+  height: 45px;
+}
+
+header .form-inputs .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #eee;
+}
+
+header .form-inputs i {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+header .shop-bag {
+  background-color: #e8113a;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+header .link-bag {
+  text-decoration: none;
+}
+
+header .qty {
+  font-size: 12px;
+}
+
+/* PRODUCTOS EN HOME */
+.card {
+  border: 0;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 13px;
+  line-height: 17px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+/* PRECIOS PRODUCTOS */
+.precios_producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+  height: 2.9375rem;
+}
+
+.precio_nuevo {
+  font-size: 1rem;
+  font-family: "Poppins", verdana, sans-serif;
+  line-height: 1.1875rem;
+  font-weight: 700;
+  width: 100%;
+  color: #e8113a;
+  text-align: center;
+}
+
+.precio_viejo {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.precio_descripcion {
+  font-size: 0.65rem;
+  font-family: "Poppins", verdana, sans-serif;
+  line-height: 0.75rem;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.precio_unitario strong {
+  font-weight: 700;
+  font-family: "Poppins", verdana, sans-serif;
+  line-height: 0;
+}
+
+/* PRECIO PRODUCTO EN SINGLE */
+.single-producto .precio_nuevo,
+.single-producto .precio_viejo,
+.single-producto .precio_unitario {
+  text-align: left;
+}
+
+.single-producto p {
+  font-size: 13px;
+  margin-top: 30px;
+  color: #e8113a;
+}
+
+/* BOTONES PRODUCTOS  EN SINGLE*/
+.single-producto .btn {
+  font-size: 14px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.single-producto .btn-warning {
+  color: #ffffff;
+  background-color: #e8113a;
+  border: 0;
+}
+
+.single-producto .precio_nuevo {
+  font-size: 25px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+/* REGLA GENERAL BOTON */
+.btn {
+  border-radius: 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* CAJA COSTO DE ENVIO */
+.costo-envio {
+  background-color: #ececec;
+  color: #333333;
+}
+
+.costo-envio .form-label {
+  font-size: 10px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.costo-envio .form-control {
+  border-radius: 0;
+  font-size: 11px;
+  padding: 10px;
+}
+
+/* PIE DE PAGINA */
+footer {
+  background-color: #ececec;
+  color: #333333;
+  font-size: 10px;
+  padding: 20px;
+}
+
+.footer_logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  list-style: none;
+}
+
+.footer_logos li {
+  padding: 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  color: #ffffff;
+  background-color: #e8113a;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.newsletter .form-control {
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * ANIMACION: latido del corazón whatsapp
+ * ----------------------------------------
+ */
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+/* BARRA INFO ECOMMERCE - PAGOS - ENVIOS - TIEMPOS */
+.medios-pago-lineal {
+  background-color: #e8113a;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.medios-pago-lineal .row {
+  padding: 15px 0;
+}
+
+.medios-pago-lineal span p:first-child {
+  color: #d4b43d;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 13px;
+  padding: 9px 0 2px 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.medios-pago-lineal span p:last-child {
+  color: #ececec;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+.medios-pago-lineal .row > a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #666;
+}
+
+.medios-pago-lineal .row > a:nth-child(2) {
+  border-right: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
+}
+
+@media (min-width: 992px) {
+  .medios-pago-lineal .row span {
+    display: inline-block;
+    text-align: left;
+    margin-left: 5px;
+  }
+  .medios-pago-lineal .row > a {
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+  }
+  .medios-pago-lineal span p:first-child {
+    font-size: 14px;
+    padding: 0;
+  }
+  .medios-pago-lineal span p:last-child {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .medios-pago-lineal .row {
+    padding: 25px 0;
+  }
+  .medios-pago-lineal .row span:last-child {
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+  }
+}
+/* breadcrumb */
+.breadcrumb {
+  line-height: 18px;
+  border-radius: 0;
+  --bs-breadcrumb-margin-bottom: 0rem;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.breadcrumb a {
+  color: #d4b43d;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Nosotros
+/*-----------------------------------------------------------------------------------*/
+.nosotros-half {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+.nosotros-half .text {
+  width: 55%;
+}
+
+.nosotros-half .image-wrap {
+  width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+  .nosotros-half .image-wrap, .nosotros-half .text {
+    width: 100%;
+  }
+}
+.nosotros-half .image-wrap {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .nosotros-half .image-wrap {
+    height: 400px;
+    width: 100%;
+  }
+}
+.nosotros-half .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.8s all ease-in-out;
+  background-color: #fff;
+}
+
+.nosotros-half .text {
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  text-align: left;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .nosotros-half .text {
+    width: 100%;
+    padding: 30px 15px;
+    float: left;
+  }
+}
+/*-----------------------------------------------------------------------------------*/
+/*	Animacion 2 - rotar
+/*-----------------------------------------------------------------------------------*/
+.rotar {
+  animation-delay: 5s;
+  animation: flip_left 7.6s steps(60, start) infinite forwards;
+}
+
+@keyframes flip_left {
+  0% {
+    transform: perspective(1000px) rotateY(90deg) skewY(-1deg);
+  }
+  5% {
+    transform: perspective(1000px) rotateY(-90deg) skewY(-1deg);
+  }
+  10% {
+    transform: perspective(1000px) rotateY(90deg) skewY(-1deg);
+  }
+  15% {
+    transform: perspective(1000px) rotateY(-75deg) skewY(-1.8deg);
+  }
+  25% {
+    transform: perspective(1000px) rotateY(20deg) skewY(0.8deg);
+  }
+  35% {
+    transform: perspective(1000px) rotateY(-25deg) skewY(-0.8deg);
+  }
+  50% {
+    transform: perspective(1000px) rotateY(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
