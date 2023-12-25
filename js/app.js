@@ -3,7 +3,7 @@ let productos = [];
 
 async function cargarProductos() {
   try {
-    const response = await fetch('./json/productos.json');
+    const response = await fetch('JSON/productos.json');
     if (!response.ok) {
       throw new Error('Error al cargar los productos, comunícate con tu administrador');
     }
