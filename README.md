@@ -1,6 +1,6 @@
 En mi código, he utilizado:
 
-**Librería:** Bootstrap
+**Librería:** Bootstrap - Maquetado - Modal
 **Fetch, async, await, try y catch: fetch, async, await, try, catch**
 **Archivo JSON** o API, llamado desde mi **fetch**: Archivo JSON
 **Desestructuración**: { nombre, valor, cantidad }
