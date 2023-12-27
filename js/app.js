@@ -25,8 +25,8 @@ function agregarAlCarrito(nombre, valor) {
   } else {
     // Si el producto no está en el carrito, agrégalo con cantidad 1
     carrito.push({ nombre, valor, cantidad: 1 });
-    
   }
+
   actualizarListaCarrito();
   mostrarModal();
   guardarCarritoEnLocalStorage();
