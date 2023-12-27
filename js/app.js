@@ -25,18 +25,8 @@ function agregarAlCarrito(nombre, valor) {
   } else {
     // Si el producto no está en el carrito, agrégalo con cantidad 1
     carrito.push({ nombre, valor, cantidad: 1 });
+    
   }
-  Toastify({
-    text: "¡Agregado a Carrito!",
-    className: "info",
-    close: true,
-    gravity: "bottom", 
-    style: {
-        background: "#000",
-    }
-})
-.showToast();
-
   actualizarListaCarrito();
   mostrarModal();
   guardarCarritoEnLocalStorage();
