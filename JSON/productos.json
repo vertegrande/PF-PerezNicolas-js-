@@ -1,8 +1,8 @@
 [
-  { "id": 1, "nombre": "Fresh Foam X Hierro v7 - New Balance", "valor": 110000, "descripcion": "La suela Vibram® MEGAGRIP proporciona una sujeción superior", "img": "img/productos/Fresh-Foam-X-Hierro-v7.jpg", "cantidad": 0 },
-  { "id": 2, "nombre": "57/40 Natural indigo - New Balance", "valor": 84999, "descripcion": "La zapatilla más New Balance de todos los tiempos", "img": "img/productos/5740.jpg", "cantidad": 0 },
-  { "id": 3, "nombre": "57/40 Natural Pink - New Balance", "valor": 84999, "descripcion": "La zapatilla más New Balance de todos los tiempos", "img": "img/productos/5740-b.jpg", "cantidad": 0 },
-  { "id": 4, "nombre": "Fresh Foam X More v4  - New Balance", "valor": 132000, "descripcion": "Lo último en la línea utiliza más Fresh Foam X", "img": "img/productos/more.jpg", "cantidad": 0 },
+  { "id": 1, "nombre": "Zapatilla Fresh Foam X Hierro v7 - New Balance", "valor": 110000, "descripcion": "La suela Vibram® MEGAGRIP proporciona una sujeción superior", "img": "img/productos/Fresh-Foam-X-Hierro-v7.jpg", "cantidad": 0},
+  { "id": 2, "nombre": "Zapatilla 57/40 Natural indigo - New Balance", "valor": 84999, "descripcion": "La zapatilla más New Balance de todos los tiempos", "img": "img/productos/5740.jpg", "cantidad": 0 },
+  { "id": 3, "nombre": "Zapatilla 57/40 Natural Pink - New Balance", "valor": 84999, "descripcion": "La zapatilla más New Balance de todos los tiempos", "img": "img/productos/5740-b.jpg", "cantidad": 0 },
+  { "id": 4, "nombre": "Zapatilla Fresh Foam X More v4  - New Balance", "valor": 132000, "descripcion": "Lo último en la línea utiliza más Fresh Foam X", "img": "img/productos/more.jpg", "cantidad": 0 },
   { "id": 5, "nombre": "Buzo Essentials Pullover WT91523  - New Balance", "valor": 33000, "descripcion": "Corte relajado, esta confeccionado en un suave tejido que ofrece comodidad durante todo el día.", "img": "img/productos/WT91523.jpg", "cantidad": 0 },
   { "id": 6, "nombre": "Buzo Essentials Pullover WT91523 (grey) - New Balance", "valor": 33000, "descripcion": "Corte relajado, esta confeccionado en un suave tejido que ofrece comodidad durante todo el día.", "img": "img/productos/grey.jpg", "cantidad": 0 },
   { "id": 7, "nombre": "Remera Athletics Amplified Tee  - New Balance", "valor": 18000, "descripcion": "Eleva tu look con la remera de hombre NB Athletics Amplified.", "img": "img/productos/new1.jpg", "cantidad": 0 },
