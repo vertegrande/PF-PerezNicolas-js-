@@ -3,7 +3,7 @@ let productos = [];
 
 async function cargarProductos() {
   try {
-    const response = await fetch('json/productos.json');
+    const response = await fetch('JSON/productos.json');
     if (!response.ok) {
       throw new Error('Error al cargar los productos, comunícate con tu administrador');
     }
@@ -26,7 +26,6 @@ function agregarAlCarrito(nombre, valor) {
     // Si el producto no está en el carrito, agrégalo con cantidad 1
     carrito.push({ nombre, valor, cantidad: 1 });
   }
-
   actualizarListaCarrito();
   mostrarModal();
   guardarCarritoEnLocalStorage();
